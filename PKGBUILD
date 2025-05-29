@@ -10,7 +10,7 @@ depends=('cups')
 makedepends=('minizip')
 provides=('hprtpos')
 
-source=("git+https://github.com/jujodeve/hprtpos.git")
+source=("${pkgname}::git+file:///$PWD")
 md5sums=('SKIP')
 
 package() {
