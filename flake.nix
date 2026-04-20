@@ -36,10 +36,5 @@
           install -m 755 -D filter/x64/raster-esc $out/lib/cups/filter/raster-esc
         '';
       };
-
-      # Overlay
-      overlays.default = final: prev: {
-        ${pkgName} = self.packages.${prev.system}.default;
-      };
     };
 }
